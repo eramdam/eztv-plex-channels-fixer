@@ -1,6 +1,6 @@
 services:
   eztvproxy:
-    image: ghcr.io/eramdam/eztv-plex-channels-fixer:release
+    image: ghcr.io/eramdam/eztv-plex-channels-fixer:main
     container_name: eztv-plex-channels-fixer
     ports:
       - 9999:9999
