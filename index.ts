@@ -1,7 +1,7 @@
 import Fastify from "fastify";
 
 const fastify = Fastify({
-  logger: false,
+  logger: true,
 });
 
 fastify.get("/", async (_request, reply) => {
