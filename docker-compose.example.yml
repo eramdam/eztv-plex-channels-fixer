@@ -1,0 +1,10 @@
+services:
+  eztvproxy:
+    image: ghcr.io/eramdam/eztv-plex-channels-fixer:release
+    container_name: eztv-plex-channels-fixer
+    ports:
+      - 9999:9999
+    environment:
+      - EZTV_URL=http://192.168.1.163:8409 # the URL of your ErsatzTV instance
+    restart: unless-stopped
+networks: {}
